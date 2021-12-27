@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<script src="https://use.fontawesome.com/releases/v5.13.1/js/all.js"></script>
+	<title>Insert Teacher</title>
+	<style>
+		
+    td{
+   	font-family: cursive;
+   	font-size: 18px;
+   	color: whitesmoke;
+   }
+
+   td:hover{
+   	color: #66FCF1;
+   }
+  
+   caption{
+   	padding-top: 20px;
+   	top: 20%;
+   	font-family: fantasy;
+   	font-size: 38px;
+   	color: whitesmoke;
+   	font-weight: bolder;
+   }
+
+   caption:hover{
+   	color: #66FCF1;
+   }
+
+  .button {
+   background-color: #66FCF1;
+   cursor: pointer;
+   border: 2px solid black;
+   color: white;
+   padding: 5px 10px;
+   text-align: center;
+   display: inline-block;
+   font-size: 14px;
+   font-family: "cursive","cursive", cursive;
+   border-radius: 5px;
+   color: #D83A56;
+ }  
+
+ .button:hover{
+ 	color: black;
+ }
+
+   table, td {
+    border: 1px solid black;
+    padding: 6px;
+}
+
+  table {
+    border-spacing: 20px;
+    padding: 10px;
+    top: 50%;
+    left: 50%;
+  }  
+
+input{
+	background: transparent;
+	width: 110%;
+	font-size: 1.3rem;
+	font-family: cursive;
+	color: white;
+}
+
+body {
+  padding-top: 50px;
+}
+
+
+	</style>
+</head>
+<body style="background-color: black;">
+  
+<center>
+
+<form name="f1" method="POST" action="insertt.jsp">
+<table>
+<caption>New Teacher</caption>
+
+<tr>
+<td>I'D </td>
+<td><input type="text" name="tid" required></td>
+</tr>
+
+<tr>
+<td>NAME </td>
+<td><input type="text" name="tname"></td>
+</tr>
+
+<tr>
+<td>BRANCH </td>
+<td><input type="text" name="branch"></td>
+</tr>
+
+<tr>
+<td>SUBJECT </td>
+<td><input type="text" name="sub"></td>
+</tr>
+
+<tr>
+<td>CONTACT </td>
+<td><input type="text" name="tcontact" pattern="[0-9]{10}"></td>
+</tr>
+
+<tr>
+<td>PASSWORD</td>
+<td><input type="text" name="tps" required></td>
+</tr>
+
+<tr>
+<td><button type="submit" class="button">Add <i class="fas fa-user-plus"></i></button>
+</td>
+</tr>
+
+</form>
+
+<form action="hod.jsp" method="POST">
+<tr>
+<td><button type="submit" class="button">Back <i class="fas fa-backward"></i></button>
+</td>
+</tr>
+</form>
+
+</table>
+
+
+</body>
+</html>

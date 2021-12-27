@@ -1,0 +1,8 @@
+/*String date=request.getParameter("dat");
+DateFormat df=new SimpleDateFormat(date);
+Date today = Calendar.getInstance().getTime();
+String d=df.format(today);*/
+
+String date=request.getParameter("dat");
+LocalDate dt=LocalDate.parse(date);
+String d=dt.toString();
